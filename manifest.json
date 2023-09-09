@@ -2,7 +2,7 @@
     "name": "TP3_CloutierPilonAlexandre",
     "short_name": "TP3",
     "description": "Site sur Space Engineers",
-    "start_url": "/TP3_CloutierPilonAlexandre/index.html",
+    "start_url": "/TP3_CloutierPilonAlexandre/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#3498db",
