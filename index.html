@@ -17,6 +17,17 @@
     <meta name="apple-mobile-web-app-title" content="Weather PWA">
     <!--<link rel="apple-touch-icon" href="images/icons/icon-192x192.png">-->
 
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                   .then((reg) => {
+                    console.log('Service worker registered.', reg);
+                });
+            });
+        }
+    </script>
+
     <link rel="icon" href="./images/icons/logo_titre.png">
     <title>Accueil</title>
 </head>
@@ -231,15 +242,5 @@
             </div>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
-        <script>
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('service-worker.js')
-                       .then((reg) => {
-                        console.log('Service worker registered.', reg);
-                    });
-                });
-            }
-        </script>
     </body>
 </html>
