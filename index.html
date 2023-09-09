@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css" rel="stylesheet" />
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="icon" href="./images/logo_titre.png">
     <title>Accueil</title>
 </head>
-    <body class="h-screen" style="background-image: url(images/bgi.jpg);">
+    <body class="h-screen min-w-[500px]" style="background-image: url(images/bgi.jpg);">
         <header class="container justify-between mx-auto p-5 flex flex-row ">
             <div class="flex flex-row basis-1/2">
-                <h1><img src="images/logo.png" alt="logo"></h1>
+                <h1><img src="images/logo.png" alt="logo" class="rounded-lg"></h1>
             </div>
-            <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <nav id="navbar" class="bg-white border-gray-200 dark:bg-gray-900 h-1/3 rounded-xl ml-4">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                   <button
                   data-collapse-toggle="navbar-default"
@@ -55,50 +55,53 @@
               </nav>
         </header>
         <main class="container mx-auto p-5">
-            <section>
-                <h2 class="text-2xl font-bold pb-3">Introduction au Monde de Space Engineers</h2>
-                <p class="pb-3 ">Présentez brièvement le concept du jeu "Space Engineers" et son univers de construction spatiale.</p>
+            <section class="mb-3">
+                <h2 class="text-2xl font-bold pb-3 text-gray-300 md:text-lg dark:text-gray-300">Introduction au Monde de Space Engineers</h2>
+                <p class="pb-3 text-gray-300 md:text-lg dark:text-gray-300">Présentez brièvement le concept du jeu "Space Engineers" et son univers de construction spatiale.</p>
 
                 <div id="default-carousel" class="relative w-full" data-carousel="slide">
                     <!-- Carousel wrapper -->
                     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                         <!-- Item 1 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="./images/monde/terre.jpg"class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="premiere images">
+                            <img src="./images/monde/terre.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="image de la terre">
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="./images/monde/20230828210415_1.jpg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="./images/monde/lune.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="image de la lune">
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="/docs/images/carousel/carousel-3.svg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="./images/monde/mars.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="image de Mars">
                         </div>
                         <!-- Item 4 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="/docs/images/carousel/carousel-4.svg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="./images/monde/europa.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="image de Europa">
                         </div>
                         <!-- Item 5 -->
                         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="/docs/images/carousel/carousel-5.svg"
-                                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                            <img src="./images/monde/alien_planet.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="image de la planète Alien">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/monde/titan.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="image de la planète Titan">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/monde/triton.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="image de la planète Triton">
+                        </div>
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="./images/monde/pertam.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="image de la planète Pertam">
                         </div>
                     </div>
                     <!-- Slider indicators -->
                     <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                            data-carousel-slide-to="0"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                            data-carousel-slide-to="1"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                            data-carousel-slide-to="2"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-                            data-carousel-slide-to="3"></button>
-                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-                            data-carousel-slide-to="4"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 7" data-carousel-slide-to="6"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 8" data-carousel-slide-to="7"></button>
                     </div>
                     <!-- Slider controls -->
                     <button type="button"
@@ -111,7 +114,7 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 1 1 5l4 4" />
                             </svg>
-                            <span class="sr-only">Previous</span>
+                            <span class="sr-only"></span>
                         </span>
                     </button>
                     <button type="button"
@@ -124,7 +127,7 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="m1 9 4-4-4-4" />
                             </svg>
-                            <span class="sr-only">Next</span>
+                            <span class="sr-only"></span>
                         </span>
                     </button>
                 </div>
@@ -132,9 +135,9 @@
             </section>
 
             <section >
-                <h2 class="text-2xl font-bold pb-3">Mécaniques de Jeu</h2>
-                <p class="pb-3 ">"Space Engineers" est un jeu de construction et de survie en sandbox développé par Keen Software House. Dans ce jeu, les joueurs sont plongés dans un environnement spatial ouvert et ont la possibilité de concevoir, construire et gérer diverses structures et vaisseaux. Voici les principales mécaniques du jeu :</p>
-                <ol class="list-decimal pb-3 ml-4">
+                <h2 class="text-2xl font-bold pb-3  text-gray-300 md:text-lg dark:text-gray-300">Mécaniques de Jeu</h2>
+                <p class="pb-3  text-gray-300 md:text-lg dark:text-gray-300">"Space Engineers" est un jeu de construction et de survie en sandbox développé par Keen Software House. Dans ce jeu, les joueurs sont plongés dans un environnement spatial ouvert et ont la possibilité de concevoir, construire et gérer diverses structures et vaisseaux. Voici les principales mécaniques du jeu :</p>
+                <ol class="list-decimal pb-3 ml-4  text-gray-300 md:text-lg dark:text-gray-300">
                     <li class="mb-2">Construction et conception : Les joueurs ont la possibilité de construire des structures, des vaisseaux spatiaux et des stations spatiales à partir d'une variété de blocs modulaires. Les blocs peuvent être assemblés pour former des structures complexes selon la créativité et les besoins du joueur.</li>
                     <li class="mb-2">Minage et collecte de ressources : Les joueurs doivent extraire des ressources telles que des minerais, du minerai de fer, de l'uranium et d'autres matériaux nécessaires à la construction et à l'amélioration de leurs structures. Ils utilisent des outils de forage et d'extraction pour collecter ces ressources sur différentes planètes et astéroïdes.</li>
                     <li class="mb-2">Ingénierie et gestion de l'énergie : Les structures et vaisseaux nécessitent de l'énergie pour fonctionner. Les joueurs doivent concevoir des systèmes d'alimentation électrique, tels que des réacteurs nucléaires, des panneaux solaires et des batteries, pour alimenter leurs créations.</li>
@@ -145,28 +148,76 @@
                     <li class="mb-2">Multijoueur : Les joueurs peuvent coopérer ou s'affronter dans des mondes partagés en ligne, ce qui permet des interactions complexes et des possibilités de jeu en équipe.</li>
                     <li class="mb-2">Modding : "Space Engineers" prend en charge les mods, ce qui signifie que les joueurs peuvent créer et partager leurs propres contenus, y compris de nouveaux blocs, des scripts personnalisés et d'autres éléments pour enrichir l'expérience de jeu.</li>
                 </ol>
-                <p class="pb-3">En somme, "Space Engineers" propose une expérience de jeu où la créativité, la construction, la gestion des ressources et la survie dans un environnement spatial dynamique sont au cœur de l'expérience.</p>
+                <p class="pb-3  text-gray-300 md:text-lg dark:text-gray-300">En somme, "Space Engineers" propose une expérience de jeu où la créativité, la construction, la gestion des ressources et la survie dans un environnement spatial dynamique sont au cœur de l'expérience.</p>
             </section>
 
+            <hr class="mt-6 mb-6 mr-6 ml-6">
+            
             <section>
-                <h2 class="text-2xl font-bold pb-3">Galerie de Créations</h2>
-                <p class="pb-3 ">Montrez des images impressionnantes de créations de joueurs, telles que des bases spatiales, des vaisseaux et des stations.</p>
+                <h2 class="text-2xl font-bold pb-3  text-gray-300 md:text-lg dark:text-gray-300">Galerie de Créations</h2>
+                <p class="pb-3 text-gray-300 md:text-lg dark:text-gray-300">Montrez des images impressionnantes de créations de joueurs, telles que des bases spatiales, des vaisseaux et des stations.</p>
 
-                <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="/docs/images/blog/image-4.jpg" alt="">
-                    <div class="flex flex-col justify-between p-4 leading-normal">
-                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <div class="flex flex-wrap justify-center">
+                    <div class="flex flex-wrap justify-center xl:w-1/2 lg:md:w-full">
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1370418772&searchtext=Vaisseau+de+combat" target="_blank" class="flex flex-col items-center bg-blue-200 border border-blue-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-5">
+                            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/Vaisseau_de_combat.jpg" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vaisseau de combat</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Des vaisseaux équipés d'armes puissantes pour la défense ou l'attaque.</p>
+                            </div>
+                        </a>
+        
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=650762437&searchtext=Station+spatiale" target="_blank" class="flex flex-col items-center bg-blue-200 border border-blue-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-5">
+                            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/Station_spatiale.jpg" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Station spatiale</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">De grandes bases spatiales qui peuvent servir de postes de ravitaillement, de points de départ pour l'exploration ou même de points de commerce.</p>
+                            </div>
+                        </a>
+        
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=675677271&searchtext=Vaisseau+de+transport" target="_blank" class="flex flex-col items-center bg-blue-200 border border-blue-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-5">
+                            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/Vaisseau_de_transport.jpg" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Vaisseau de transport</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Des vaisseaux conçus pour transporter des marchandises ou des passagers entre différentes planètes.</p>
+                            </div>
+                        </a>
                     </div>
-                </a>
 
+                    <div class="flex flex-wrap justify-center xl:w-1/2 lg:md:w-full">
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1460388964&searchtext=Rover+plan%C3%A9taire" target="_blank" class="flex flex-col items-center bg-blue-200 border border-blue-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-5">
+                            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/Rover_planetaire.jpg" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Rover planétaire</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Des véhicules terrestres conçus pour explorer la surface des planètes de manière efficace.</p>
+                            </div>
+                        </a>
+        
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=240995007&searchtext=Base+lunaire" target="_blank" class="flex flex-col items-center bg-blue-200 border border-blue-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-5">
+                            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/Base.jpg" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Base en tous genres</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Des bases construites sur une lune, une planète ou sur un astéroïde pour la recherche de ressources ou l'exploration spatiale.</p>
+                            </div>
+                        </a>
+        
+                        <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=299102359&searchtext=Plateforme+de+forage" target="_blank" class="flex flex-col items-center bg-blue-200 border border-blue-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-5">
+                            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="./images/Plateforme_de_forage.jpg" alt="">
+                            <div class="flex flex-col justify-between p-4 leading-normal">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Plateforme de forage</h5>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Des installations équipées de foreuses pour extraire efficacement des ressources des astéroïdes ou des planètes.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <a class="font-bold text-gray-300 md:text-lg dark:text-gray-300" href="#navbar">Haut de la page</a>
             </section>
         </main>
         <hr class="mt-6 mb-6 mr-6 ml-6">
         <footer class="container mx-auto flex justify-center">
             <div class="h-20 flex flex-row items-center">
-                <p class="text-lg pb-4">Alexandre Coutier-Pilon</p>
-                <p class="text-lg pb-4">Cégep de Trois-Rivières</p>
+                <p class="text-lg pb-4  text-gray-300 md:text-lg dark:text-gray-300">Alexandre Coutier-Pilon</p>
+                <p class="text-lg pb-4  text-gray-300 md:text-lg dark:text-gray-300 ml-4">Cégep de Trois-Rivières</p>
             </div>
         </footer>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
