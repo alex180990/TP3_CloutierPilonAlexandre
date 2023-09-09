@@ -1,4 +1,4 @@
-const CACHE_NAME = 'static-cache-v1';
+const CACHE_NAME = 'static-cache-v2';
 
 const FILES_TO_CACHE = [
     'offline.html',
@@ -7,14 +7,11 @@ const FILES_TO_CACHE = [
 
 self.addEventListener('install', (evt) => {
     console.log('[ServiceWorker] Install');
-
     evt.waitUntil(
-        caches.open(CACHE_NAME).then((cache) => {
-            console.log('[ServiceWorker] Pre-caching offline page');
-            return cache.addAll(FILES_TO_CACHE).catch((error) => {
-                console.error('[ServiceWorker] Failed to cache files:', error);
-            });
-        })
+    caches.open(CACHE_NAME).then((cache) => {
+    console.log('[ServiceWorker] Pre-caching offline page');
+    return cache.addAll(FILES_TO_CACHE);
+    })
     );
     self.skipWaiting();
 });
