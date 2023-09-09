@@ -23,8 +23,6 @@ function installPWA(evt) {
         });
 }
 
-window.addEventListener('appinstalled', logAppInstalled);
-
 function logAppInstalled(evt) {
     console.log('TP3 installé',evt);
 }
