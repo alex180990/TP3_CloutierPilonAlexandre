@@ -2,7 +2,7 @@ let deferredInstallPrompt = null;
 const installButton = document.getElementById('installButton');
 installButton.addEventListener('click', installPWA);
 
-window.addEventListener('beforeinstallprompt', saveBeforeInstallPromptEvent);
+window.addEventListener('beforeInstallPrompt', saveBeforeInstallPromptEvent);
 
 function saveBeforeInstallPromptEvent(evt) {
     deferredInstallPrompt = evt;
@@ -22,6 +22,8 @@ function installPWA(evt) {
             deferredInstallPrompt = null;
         });
 }
+
+window.addEventListener('appinstalled', logAppInstalled);
 
 function logAppInstalled(evt) {
     console.log('TP3 installé',evt);
