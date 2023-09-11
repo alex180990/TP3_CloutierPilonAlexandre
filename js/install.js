@@ -19,7 +19,7 @@ function installPWA(evt) {
             } else {
                 console.log('User dismissed the A2HS prompt', choice);
             }
-            deferredInstallPrompt = null;
+            //deferredInstallPrompt = null;
         });
 }
 
