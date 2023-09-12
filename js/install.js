@@ -11,11 +11,11 @@ function saveBeforeInstallPromptEvent(evt) {
 
 function installPWA(evt) {
     deferredInstallPrompt.prompt();
-    evt.srcElement.setAttribute('hidden', true);
+    evt.srcElement.classList.add('hidden');
     deferredInstallPrompt.userChoice
         .then((choice) => {
             if (choice.outcome === 'accepted') {
-
+                installButton.classList.add('hidden');
                 console.log('User accepted the A2HS prompt', choice);
             } else {
                 console.log('User dismissed the A2HS prompt', choice);
