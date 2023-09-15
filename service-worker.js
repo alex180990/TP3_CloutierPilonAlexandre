@@ -1,11 +1,11 @@
-const CACHE_NAME = 'static-cache-v1.1.8';
+const CACHE_NAME = 'static-cache-v1.1.9';
 
 const FILES_TO_CACHE = [
     'index.html',
     'guides_astuces.html',
     'communaute_ressources.html',
 
-    'manifest.json',
+    /*'manifest.json',
 
     'images/icons/icon-144x144.png',
     'images/icons/icon-192x192.png',
@@ -20,7 +20,7 @@ const FILES_TO_CACHE = [
     'images/Rover_planetaire.jpg',
     'images/Station_spatiale.jpg',
     'images/Vaisseau_de_combat.jpg',
-    'images/Vaisseau_de_transport.jpg',
+    'images/Vaisseau_de_transport.jpg',*/
 ];
 
 
