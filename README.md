@@ -1,6 +1,6 @@
 # TP3_CloutierPilonAlexandre
 
-Composents Tailwindcss
+Composents Tailwind css
 
 -Bar de vanigation : https://flowbite.com/docs/components/navbar/#default-navbar
 -Carousselle :https://flowbite.com/docs/components/carousel
