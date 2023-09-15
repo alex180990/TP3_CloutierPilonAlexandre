@@ -1,4 +1,4 @@
-const CACHE_NAME = 'static-cache-v1.1.7';
+const CACHE_NAME = 'static-cache-v1.1.8';
 
 const FILES_TO_CACHE = [
     'index.html',
@@ -11,7 +11,7 @@ const FILES_TO_CACHE = [
     'images/icons/icon-192x192.png',
     'images/icons/icon-512x512.png',
     'images/icons/logo_titre.png',
-    'images/icons/logo.png',
+    'images/logo.png',
 
     'images/bgi.jpg',
     'images/base.jpg',
