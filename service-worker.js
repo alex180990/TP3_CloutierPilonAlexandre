@@ -1,9 +1,9 @@
 const CACHE_NAME = 'static-cache-v1.1.4';
 
 const FILES_TO_CACHE = [
+    'offline.html',
     'index.html',
-    'guides_astuces.html',
-    'communaute_ressources.html',
+    'images/icons/logo_titre.png',
 ];
 
 
