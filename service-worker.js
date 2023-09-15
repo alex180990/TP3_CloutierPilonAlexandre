@@ -1,8 +1,7 @@
-const CACHE_NAME = 'static-cache-v1.1.5';
+const CACHE_NAME = 'static-cache-v1.1.6';
 
 const FILES_TO_CACHE = [
     'offline.html',
-    'index.html',
     'images/icons/logo_titre.png',
 ];
 
