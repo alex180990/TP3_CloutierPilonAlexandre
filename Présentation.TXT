@@ -1,0 +1,7 @@
+Alexandre Cloutier-Pilon 1736871
+
+TP3 Techniques d'intégration des interfaces Web 2 (582-D24-RI)
+
+Projet fait sur le jeu 'Space Engineers'
+
+Lien vers le dépot Github : https://github.com/alex180990/TP3_CloutierPilonAlexandre
